@@ -1,6 +1,6 @@
 # Makefile
 install: # инициализация
-        poetry install
+	poetry install
 
 brain-games: # запуск программы
 	poetry run brain-games
