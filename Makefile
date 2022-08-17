@@ -13,3 +13,6 @@ package-install: # установка пакета
 
 brain-games: # запуск программы
 	poetry run brain-games
+
+lint: # запуск линтера
+	poetry run flake8 brain_games
