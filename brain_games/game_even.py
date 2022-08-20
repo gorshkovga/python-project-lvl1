@@ -11,7 +11,7 @@ def game(user_name):
     """Do game.
 
     Parameters:
-    name -- user name
+    user_name -- user name
     """
     print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
