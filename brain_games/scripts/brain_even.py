@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Main module."""
 
-from brain_games.greeting import great_user
 from brain_games.game import game
+from brain_games.greeting import great_user
+
 
 def main():
     """Call functions from other modules."""
