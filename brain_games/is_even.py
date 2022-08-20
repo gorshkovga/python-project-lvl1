@@ -12,6 +12,4 @@ def is_even(number):
     res = (number % 2 == 0)
     if res:
         return 'yes'
-    # почему ругается линтер?
-    else:
-        return 'no'  # noqa: WPS503
+    return 'no'
