@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Main module."""
 
-from brain_games.game import game
+from brain_games.game_even import game
 from brain_games.greeting import great_user
 
 
 def main():
     """Call functions from other modules."""
-    name = great_user()
-    game(name)
+    user_name = great_user()
+    game(user_name)
 
 
 if __name__ == '__main__':
