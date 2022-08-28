@@ -3,12 +3,15 @@
 
 from brain_games.game_even import game
 from brain_games.greeting import great_user
+from brain_games.print_rules import print_rules
+from brain_games.make_game import make_game
 
 
 def main():
     """Call functions from other modules."""
     user_name = great_user()
-    game(user_name)
+    print_rules('even')
+    make_game(game, user_name)
 
 
 if __name__ == '__main__':
