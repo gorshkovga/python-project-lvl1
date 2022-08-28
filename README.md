@@ -4,6 +4,6 @@
 
 ### asciinema link
 # https://asciinema.org/a/6dtgZb1PTlCWZ0jYK0jKGxc7K
+# https://asciinema.org/a/IoLNJJpRjhaekQANcDIkhq30F
 
-https://asciinema.org/a/IoLNJJpRjhaekQANcDIkhq30F
-
+https://asciinema.org/a/NCA9CY2LcBgPbA6q6eCXTBHAW
