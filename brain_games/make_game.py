@@ -1,10 +1,11 @@
-"""Game module."""
+"""Game making module."""
 
 
 def make_game(game_function, user_name):
-    """Do game.
+    """Do game levels iterations.
 
     Parameters:
+    game_function -- function with game logics
     user_name -- user name
     """
     counter = 0

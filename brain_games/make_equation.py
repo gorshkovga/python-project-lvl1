@@ -1,6 +1,7 @@
 """Equation generator module."""
 
-from random import randint, choice
+from random import choice, randint
+
 
 def make_equation():
     """Make random equation.
@@ -11,5 +12,4 @@ def make_equation():
     number_one = randint(0, 100)  # noqa: S311
     number_two = randint(0, 100)  # noqa: S311
     operations = (' + ', ' - ', ' * ')
-    equation = str(number_one) + choice(operations) + str(number_two)
-    return equation
+    return str(number_one) + choice(operations) + str(number_two)  # noqa: S311

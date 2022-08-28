@@ -1,4 +1,4 @@
-"""Module with game rules."""
+"""Module with games rules."""
 
 
 def print_rules(game_name):

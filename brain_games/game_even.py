@@ -12,10 +12,11 @@ def game(user_name):
 
     Parameters:
     user_name -- user name
+    Returns:
+    return logical result of level passing
     """
     number = randint(0, 100)  # noqa: S311
     print(f'Question: {number}')
     answer = string('Your answer: ')
     true_answer = is_even(number)
-    check_result = check_answer(user_name, answer, true_answer)
-    return check_result
+    return check_answer(user_name, answer, true_answer)
