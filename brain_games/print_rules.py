@@ -9,3 +9,5 @@ def print_rules(game_name):
         print('What is the result of the expression?')
     elif game_name == 'gcd':
         print('Find the greatest common divisor of given numbers.')
+    elif game_name == 'progression':
+        print('What number is missing in the progression?')
