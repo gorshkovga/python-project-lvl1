@@ -11,3 +11,5 @@ def print_rules(game_name):
         print('Find the greatest common divisor of given numbers.')
     elif game_name == 'progression':
         print('What number is missing in the progression?')
+    elif game_name == 'prime':
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
