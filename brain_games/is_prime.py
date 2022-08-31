@@ -14,4 +14,4 @@ def is_prime(number):
         if number % ind == 0:
             return 'no'
         ind += 1
-    return 'yes'
+    return 'yes' if number > 1 else 'no'
