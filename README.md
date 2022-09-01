@@ -7,20 +7,20 @@ Brain Game - this is a serie of wasting time console games.
 
 ### Instalation:
 Just type in console:
-'''
+```
 make build
 make package-install
-'''
+```
 
 ### Running:
 Just type in console:
-'''
+```
 brain-even
 brain-calc
 brain-gcd
 brain-progression
 brain-prime
-'''
+```
 
 ### Demostaration:
 Check raw video on [asciinema.org] (https://asciinema.org/a/dcKTMgvtWXd09A31i1oeU5cGN)
