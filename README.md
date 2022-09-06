@@ -23,4 +23,5 @@ brain-prime
 ```
 
 ### Demostaration:
-Check raw video on [![asciicast](https://asciinema.org/a/dcKTMgvtWXd09A31i1oeU5cGN.png)](https://asciinema.org/a/dcKTMgvtWXd09A31i1oeU5cGN)
+Check raw video on asciinema.org.
+[![asciicast](https://asciinema.org/a/dcKTMgvtWXd09A31i1oeU5cGN.png)](https://asciinema.org/a/dcKTMgvtWXd09A31i1oeU5cGN)
