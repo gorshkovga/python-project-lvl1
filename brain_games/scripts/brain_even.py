@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Main module."""
 
-from games.game_even import game, RULES
+from games.game_even import RULES, game
 from games.make_game import make_game
 
 
