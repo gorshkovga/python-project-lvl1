@@ -2,7 +2,7 @@
 from prompt import string
 
 
-def make_game(game_function, RULES):
+def make_game(game_function, rules):  # noqa: WPS210
     """Do game levels iterations.
 
     Parameters:
@@ -12,7 +12,7 @@ def make_game(game_function, RULES):
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(RULES)
+    print(rules)
 
     counter = 0
     while counter < 3:
