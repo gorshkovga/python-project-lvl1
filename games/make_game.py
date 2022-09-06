@@ -31,5 +31,5 @@ def make_game(game_function, RULES):
                 f"Correct answer was '{true_answer}'."
             )
             print(long_message)
-            print(f"Let's try again, {user_name}!")
+            print(f"Let's try again, {name}!")
             break
