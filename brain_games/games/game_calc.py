@@ -1,20 +1,19 @@
 """Game module."""
 
-from brain_games.check_answer import check_answer
-from brain_games.make_equation import make_equation
-from prompt import string
 
+from random import choice, randint
 
-def game(user_name):
-    """Do game.
+RULES = 'What is the result of the expression?'
 
-    Parameters:
-    user_name -- user name
+def game():
+    """Do game and make question.
+
     Returns:
-    return logical result of level passing
+    return true answer
     """
-    equation = make_equation()
+    number_one = randint(0, 100)  # noqa: S311
+    number_two = randint(0, 100)  # noqa: S311
+    operations = (' + ', ' - ', ' * ')
+    equation = str(number_one) + choice(operations) + str(number_two)  # noqa: S311
     print(f'Question: {equation}')
-    answer = string('Your answer: ')
-    true_answer = str(int(eval(equation)))  # noqa: S307
-    return check_answer(user_name, answer, true_answer)
+    return str(int(eval(equation)))  # noqa: S307
