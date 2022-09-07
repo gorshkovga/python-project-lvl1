@@ -4,6 +4,7 @@ from random import randint
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def game():
     """Do game.
 
@@ -18,4 +19,3 @@ def game():
             return 'no'
         ind += 1
     return 'yes' if number > 1 else 'no'
-

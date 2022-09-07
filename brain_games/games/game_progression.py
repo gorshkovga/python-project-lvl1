@@ -5,13 +5,13 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def game():
+def game():  # noqa: WPS210
     """Do game.
 
     Returns:
     return true answer
     """
-    def make_progression():  # noqa: WPS210
+    def make_progression():  # noqa: WPS210, WPS430
         """Make random arithmetic progression.
 
         Returns:
