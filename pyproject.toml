@@ -5,7 +5,6 @@ description = "Small collection of games for wating your time and my hexlet prac
 authors = ["Gennadii Gorshkov <gorshkovgena@gmail.com>"]
 packages = [
   { include = "brain_games" },
-  { include = "games" }
 ]
 classifiers = [
     "Topic :: Games/Entertainment"
