@@ -2,21 +2,20 @@
 
 from random import randint
 
-from brain_games.check_answer import check_answer
-from brain_games.is_prime import is_prime
-from prompt import string
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-
-def game(user_name):
+def game():
     """Do game.
 
-    Parameters:
-    user_name -- user name
     Returns:
-    return logical result of level passing
+    return true answer
     """
     number = randint(0, 100)  # noqa: S311
     print(f'Question: {number}')
-    answer = string('Your answer: ')
-    true_answer = is_prime(number)
-    return check_answer(user_name, answer, true_answer)
+    ind = 2
+    while ind < number:
+        if number % ind == 0:
+            return 'no'
+        ind += 1
+    return 'yes' if number > 1 else 'no'
+
