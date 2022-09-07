@@ -9,7 +9,6 @@ RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 def game():
     """Do game and make question.
 
-    Parameters:
     Returns:
     return true answer
     """
