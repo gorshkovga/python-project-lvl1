@@ -1,20 +1,38 @@
 """Game module."""
 
+from random import randint
 
-from brain_games.check_answer import check_answer
-from brain_games.make_progression import make_progression
-from prompt import string
+RULES = 'What number is missing in the progression?'
 
 
-def game(user_name):
+def game():
     """Do game.
 
-    Parameters:
-    user_name -- user name
     Returns:
-    return logical result of level passing
+    return true answer
     """
+    def make_progression():  # noqa: WPS210
+        """Make random arithmetic progression.
+
+        Returns:
+        return hidden progression member
+        """
+        start = randint(0, 100)  # noqa: S311, WPS432
+        step = randint(1, 10)  # noqa: S311, WPS432
+        length = randint(5, 15)  # noqa: S311, WPS432
+        hidden_member_index = randint(1, length)  # noqa: S311, WP432
+        ind = 1
+        progression = ''
+        while ind <= length:
+            if ind == hidden_member_index:
+                progression = f'{progression} ..'
+                hidden_member = str(start + (ind - 1) * step)
+            else:
+                member = str(start + (ind - 1) * step)
+                progression = f'{progression} {member}'
+            ind += 1
+        return (hidden_member, progression.strip())
+
     (true_answer, question) = make_progression()
     print(f'Question: {question}')
-    answer = string('Your answer: ')
-    return check_answer(user_name, answer, true_answer)
+    return true_answer
