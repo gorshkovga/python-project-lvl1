@@ -5,7 +5,7 @@
 ### Description:
 Brain Game - this is a serie of wasting time console games.
 
-### Instalation:
+### Installation:
 Just type in console:
 ```
 make build
