@@ -12,10 +12,10 @@ def game():
     Returns:
     return question, true answer
     """
-    number_one = randint(0, 100)  # noqa: S311
-    number_two = randint(0, 100)  # noqa: S311
+    number_one = randint(0, 100)
+    number_two = randint(0, 100)
     operations = (' + ', ' - ', ' * ')
     equation = (
-        str(number_one) + choice(operations) + str(number_two)  # noqa: S311
+        str(number_one) + choice(operations) + str(number_two)
     )
-    return equation, str(int(eval(equation)))  # noqa: S307
+    return equation, str(int(eval(equation)))

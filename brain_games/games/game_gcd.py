@@ -11,7 +11,7 @@ def game():
     Returns:
     return question, true answer
     """
-    def find_gcd(number_one, number_two):  # noqa: WPS430
+    def find_gcd(number_one, number_two):
         """Find GCD for two numbers.
 
         Parameters:
@@ -25,6 +25,6 @@ def game():
             return str(min_number)
         return find_gcd(min_number, max_number % min_number)
 
-    number_one = randint(1, 100)  # noqa: S311
-    number_two = randint(1, 100)  # noqa: S311
+    number_one = randint(1, 100)
+    number_two = randint(1, 100)
     return f'{number_one} {number_two}', find_gcd(number_one, number_two)

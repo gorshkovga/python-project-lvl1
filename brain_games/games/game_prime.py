@@ -11,7 +11,7 @@ def game():
     Returns:
     return question, true answer
     """
-    number = randint(0, 100)  # noqa: S311
+    number = randint(0, 100)
     ind = 2
     while ind < number:
         if number % ind == 0:

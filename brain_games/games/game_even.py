@@ -12,5 +12,5 @@ def game():
     Returns:
     return question, true answer
     """
-    number = randint(0, 100)  # noqa: S311
+    number = randint(0, 100)
     return number, 'yes' if (number % 2 == 0) else 'no'

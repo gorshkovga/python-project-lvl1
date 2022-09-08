@@ -2,7 +2,7 @@
 from prompt import string
 
 
-def make_game(game_module):  # noqa: WPS210
+def make_game(game_module):
     """Do game levels iterations.
 
     Parameters:
@@ -27,8 +27,7 @@ def make_game(game_module):  # noqa: WPS210
         elif not level_result:
             print(
                 f"'{user_answer}' is wrong answer ;(. "
-                +  # noqa: W503, W504
-                f"Correct answer was '{true_answer}'."
+                + f"Correct answer was '{true_answer}'."  # noqa: W503
             )
             print(f"Let's try again, {name}!")
             break
