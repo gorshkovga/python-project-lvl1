@@ -25,4 +25,4 @@ def game():
             member = str(start + (ind - 1) * step)
             progression = f'{progression} {member}'
         ind += 1
-    return progression, hidden_member
+    return progression.strip(), hidden_member
