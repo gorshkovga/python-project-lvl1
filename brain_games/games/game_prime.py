@@ -9,13 +9,12 @@ def game():
     """Do game.
 
     Returns:
-    return true answer
+    return question, true answer
     """
     number = randint(0, 100)  # noqa: S311
-    print(f'Question: {number}')
     ind = 2
     while ind < number:
         if number % ind == 0:
-            return 'no'
+            return number, 'no'
         ind += 1
-    return 'yes' if number > 1 else 'no'
+    return number, 'yes' if number > 1 else 'no'
