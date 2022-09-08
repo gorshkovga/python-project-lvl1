@@ -9,7 +9,7 @@ def game():  # noqa: WPS210
     """Do game.
 
     Returns:
-    return true answer
+    return question, true answer
     """
     start = randint(0, 100)  # noqa: S311, WPS432
     step = randint(1, 10)  # noqa: S311, WPS432
@@ -25,5 +25,4 @@ def game():  # noqa: WPS210
             member = str(start + (ind - 1) * step)
             progression = f'{progression} {member}'
         ind += 1
-    print(f'Question: {progression}')
-    return hidden_member
+    return progression, hidden_member
