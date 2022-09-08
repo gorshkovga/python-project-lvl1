@@ -2,21 +2,21 @@
 from prompt import string
 
 
-def make_game(game_function, rules):  # noqa: WPS210
+def make_game(game_module):  # noqa: WPS210
     """Do game levels iterations.
 
     Parameters:
-    game_function -- function with game logics
-    rules -- game rules
+    game_module -- module with game logics and attributes
     """
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(rules)
+    print(game_module.RULES)
     LEVELS = 3
     counter = 0
     while counter < LEVELS:
-        true_answer = game_function()
+        question, true_answer = game_module.game()
+        print(f'Question: {question}')
         user_answer = string('Your answer: ')
         level_result = (user_answer == true_answer)
         if level_result:
