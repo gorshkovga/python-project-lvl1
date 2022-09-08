@@ -10,8 +10,7 @@ def game():
     """Do game and make question.
 
     Returns:
-    return true answer
+    return question, true answer
     """
     number = randint(0, 100)  # noqa: S311
-    print(f'Question: {number}')
-    return 'yes' if (number % 2 == 0) else 'no'
+    return number, 'yes' if (number % 2 == 0) else 'no'
