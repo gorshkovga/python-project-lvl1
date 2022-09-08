@@ -12,11 +12,11 @@ classifiers = [
 repository = "https://github.com/gorshkovga/python-project-lvl1"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
-wemake-python-styleguide = "^0.16.1"
+flake8 = "^5.0.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
