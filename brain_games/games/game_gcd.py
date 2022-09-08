@@ -9,7 +9,7 @@ def game():
     """Do game.
 
     Returns:
-    return true answer
+    return question, true answer
     """
     def find_gcd(number_one, number_two):  # noqa: WPS430
         """Find GCD for two numbers.
@@ -27,5 +27,4 @@ def game():
 
     number_one = randint(1, 100)  # noqa: S311
     number_two = randint(1, 100)  # noqa: S311
-    print(f'Question: {number_one} {number_two}')
-    return find_gcd(number_one, number_two)
+    return f'{number_one} {number_two}', find_gcd(number_one, number_two)
