@@ -5,8 +5,8 @@ from random import randint
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def game():
-    """Do game.
+def make_question():
+    """Make question and answer.
 
     Returns:
     return question, true answer
