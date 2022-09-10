@@ -6,8 +6,8 @@ from random import randint
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game():
-    """Do game and make question.
+def make_question():
+    """Make question and answer..
 
     Returns:
     return question, true answer
