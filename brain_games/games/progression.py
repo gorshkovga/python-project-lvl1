@@ -15,10 +15,9 @@ def make_question():
     step = randint(1, 10)
     length = randint(5, 15)
     hidden_member_index = randint(1, length)
-    ind = 1
     progression = ''
     for ind in range(length):
-        if ind == hidden_member_index:
+        if ind == hidden_member_index - 1:
             progression = f'{progression} ..'
             hidden_member = str(start + (ind - 1) * step)
         else:
