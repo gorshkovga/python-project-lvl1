@@ -6,7 +6,7 @@ RULES = 'What number is missing in the progression?'
 
 
 def make_question():
-    """Make question and answer..
+    """Make question and answer.
 
     Returns:
     return question, true answer
