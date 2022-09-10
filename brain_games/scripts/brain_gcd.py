@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Main module."""
 
-import brain_games.games.game_gcd as game_module
+import brain_games.games.gcd as game_module
 from brain_games.run_game import run_game
 
 
