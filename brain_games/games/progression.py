@@ -5,8 +5,8 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def game():
-    """Do game.
+def make_question():
+    """Make question and answer..
 
     Returns:
     return question, true answer
