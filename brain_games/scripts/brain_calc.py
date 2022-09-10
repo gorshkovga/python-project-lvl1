@@ -2,12 +2,12 @@
 """Main module."""
 
 import brain_games.games.game_calc as game_module
-from brain_games.make_game import make_game
+from brain_games.run_game import run_game
 
 
 def main():
     """Call functions from other module."""
-    make_game(game_module)
+    run_game(game_module)
 
 
 if __name__ == '__main__':
