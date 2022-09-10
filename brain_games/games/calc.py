@@ -6,8 +6,8 @@ from random import choice, randint
 RULES = 'What is the result of the expression?'
 
 
-def game():
-    """Do game and make question.
+def make_question():
+    """Make question and unswer.
 
     Returns:
     return question, true answer
