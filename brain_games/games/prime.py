@@ -19,6 +19,7 @@ def is_prime(number):
         ind += 1
     return True if number > 1 else False
 
+
 def make_question():
     """Make question and answer.
 
