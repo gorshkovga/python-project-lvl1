@@ -17,12 +17,11 @@ def game():
     hidden_member_index = randint(1, length)
     ind = 1
     progression = ''
-    while ind <= length:
+    for ind in range(length):
         if ind == hidden_member_index:
             progression = f'{progression} ..'
             hidden_member = str(start + (ind - 1) * step)
         else:
             member = str(start + (ind - 1) * step)
             progression = f'{progression} {member}'
-        ind += 1
     return progression.strip(), hidden_member
