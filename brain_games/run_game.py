@@ -13,7 +13,7 @@ def run_game(game, number_of_levels=3):
     print(f'Hello, {name}!')
     print(game.RULES)
     for level in range(number_of_levels):
-        question, true_answer = game.game()
+        question, true_answer = game.make_question()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
         if user_answer == true_answer:
