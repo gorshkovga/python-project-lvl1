@@ -1,20 +1,19 @@
-"""Game making module."""
+"""Game running module."""
 from prompt import string
 
 
-def run_game(game):
+def run_game(game, number_of_levels=3):
     """Run game levels iterations.
 
     Parameters:
-    game_module -- module with game logics and attributes
+    game -- module with game logics and attributes
     """
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.RULES)
-    LEVELS = 3
     counter = 0
-    while counter < LEVELS:
+    while counter < number_of_levels:
         question, true_answer = game.game()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
