@@ -2,8 +2,8 @@
 from prompt import string
 
 
-def make_game(game_module):
-    """Do game levels iterations.
+def run_game(game):
+    """Run game levels iterations.
 
     Parameters:
     game_module -- module with game logics and attributes
@@ -11,11 +11,11 @@ def make_game(game_module):
     print('Welcome to the Brain Games!')
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game_module.RULES)
+    print(game.RULES)
     LEVELS = 3
     counter = 0
     while counter < LEVELS:
-        question, true_answer = game_module.game()
+        question, true_answer = game.game()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
         level_result = (user_answer == true_answer)
