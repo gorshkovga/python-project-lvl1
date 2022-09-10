@@ -2,7 +2,7 @@
 """Main module."""
 
 
-import brain_games.games.game_progression as game_module
+import brain_games.games.progression as game_module
 from brain_games.run_game import run_game
 
 
