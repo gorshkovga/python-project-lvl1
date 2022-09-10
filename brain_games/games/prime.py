@@ -5,8 +5,8 @@ from random import randint
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def game():
-    """Do game.
+def make_question():
+    """Make question and answer.
 
     Returns:
     return question, true answer
