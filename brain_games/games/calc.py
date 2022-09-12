@@ -14,14 +14,14 @@ def make_question():
     """
     number_one = randint(0, 100)
     number_two = randint(0, 100)
-    operations = (' + ', ' - ', ' * ')
+    operations = '+-*'
     operation = choice(operations)
     equation = (
-        str(number_one) + operation + str(number_two)
+        str(number_one) + operation.center(3) + str(number_two)
     )
-    if operation == ' + ':
+    if operation == '+':
         result = number_one + number_two
-    elif operation == ' - ':
+    elif operation == '-':
         result = number_one - number_two
     else:
         result = number_one * number_two
