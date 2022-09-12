@@ -12,11 +12,9 @@ def is_prime(number):
     Returns:
     return logical answer
     """
-    ind = 2
-    while ind < number:
-        if number % ind == 0:
+    for num in range(number)[2:]:
+        if number % num == 0:
             return False
-        ind += 1
     return True if number > 1 else False
 
 
@@ -26,6 +24,5 @@ def make_question():
     Returns:
     return question, true answer
     """
-    number = randint(0, 100)
-    result = is_prime(number)
-    return number, 'yes' if result else 'no'
+    number = randint(1, 100)
+    return number, 'yes' if is_prime(number) else 'no'
