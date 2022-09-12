@@ -15,7 +15,7 @@ def run(game):
     print(f'Hello, {name}!')
     print(game.RULES)
     for _ in range(NUMBER_OF_LEVELS):
-        question, true_answer = game.make_question()
+        question, true_answer = game.make_question_and_answer()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
         if user_answer == true_answer:
