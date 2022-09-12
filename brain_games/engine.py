@@ -21,7 +21,7 @@ def run(game, number_of_levels=3):
         else:
             print(
                 f"'{user_answer}' is wrong answer ;(. "
-                + f"Correct answer was '{true_answer}'."  # noqa: W503
+                f"Correct answer was '{true_answer}'."
             )
             print(f"Let's try again, {name}!")
             break
