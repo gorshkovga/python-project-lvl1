@@ -16,13 +16,11 @@ def make_question():
     number_two = randint(0, 100)
     operations = '+-*'
     operation = choice(operations)
-    equation = (
-        str(number_one) + operation.center(3) + str(number_two)
-    )
+    equation = f'{number_one} {operation} {number_two}'
     if operation == '+':
         result = number_one + number_two
     elif operation == '-':
         result = number_one - number_two
-    else:
+    elif operation == '*':
         result = number_one * number_two
     return equation, str(result)
