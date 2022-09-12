@@ -12,7 +12,7 @@ def run(game, number_of_levels=3):
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.RULES)
-    for level in range(number_of_levels):
+    for _ in range(number_of_levels):
         question, true_answer = game.make_question()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
