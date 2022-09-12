@@ -2,7 +2,7 @@
 from prompt import string
 
 
-def run_game(game, number_of_levels=3):
+def run(game, number_of_levels=3):
     """Run game levels iterations.
 
     Parameters:
