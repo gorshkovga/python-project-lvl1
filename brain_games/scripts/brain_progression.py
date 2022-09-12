@@ -2,13 +2,13 @@
 """Main module."""
 
 
-import brain_games.games.progression as game_module
+from brain_games.games import progression
 from brain_games.engine import run
 
 
 def main():
     """Call functions from other module."""
-    run(game_module)
+    run(progression)
 
 
 if __name__ == '__main__':
