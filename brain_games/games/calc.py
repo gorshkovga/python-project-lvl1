@@ -6,7 +6,7 @@ from random import choice, randint
 RULES = 'What is the result of the expression?'
 
 
-def make_question():
+def make_question_and_answer():
     """Make question and unswer.
 
     Returns:

@@ -5,7 +5,7 @@ from random import randint
 RULES = 'What number is missing in the progression?'
 
 
-def make_question():
+def make_question_and_answer():
     """Make question and answer.
 
     Returns:

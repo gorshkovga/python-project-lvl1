@@ -20,7 +20,7 @@ def find_gcd(number_one, number_two):
     return find_gcd(min_number, max_number % min_number)
 
 
-def make_question():
+def make_question_and_answer():
     """Make question and answer.
 
     Returns:
