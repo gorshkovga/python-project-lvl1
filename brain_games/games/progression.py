@@ -14,13 +14,10 @@ def generate_question_and_answer():
     start = randint(0, 100)
     step = randint(1, 10)
     length = randint(5, 15)
-    hidden_member_index = randint(1, length)
-    progression = ''
+    hidden_member_index = randint(0, length - 1)
+    progression = []
     for ind in range(length):
-        if ind == hidden_member_index - 1:
-            progression = f'{progression} ..'
-            hidden_member = str(start + (ind - 1) * step)
-        else:
-            member = str(start + (ind - 1) * step)
-            progression = f'{progression} {member}'
-    return progression.strip(), hidden_member
+        progression.append(str(start + ind * step))
+    correct_answer = progression[hidden_member_index]
+    progression[hidden_member_index] = '..'
+    return ' '.join(progression), correct_answer
