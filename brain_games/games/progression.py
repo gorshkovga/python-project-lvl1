@@ -9,7 +9,7 @@ def generate_question_and_answer():
     """Generate question and answer.
 
     Returns:
-    return question, true answer
+    return question, correct answer
     """
     start = randint(0, 100)
     step = randint(1, 10)

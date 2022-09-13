@@ -15,15 +15,15 @@ def run(game):
     print(f'Hello, {name}!')
     print(game.RULES)
     for _ in range(NUMBER_OF_LEVELS):
-        question, true_answer = game.generate_question_and_answer()
+        question, correct_answer = game.generate_question_and_answer()
         print(f'Question: {question}')
         user_answer = string('Your answer: ')
-        if user_answer == true_answer:
+        if user_answer == correct_answer:
             print('Correct!')
         else:
             print(
                 f"'{user_answer}' is wrong answer ;(. "
-                f"Correct answer was '{true_answer}'."
+                f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")
             break

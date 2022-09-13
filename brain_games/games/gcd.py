@@ -24,7 +24,7 @@ def generate_question_and_answer():
     """Generate question and answer.
 
     Returns:
-    return question, true answer
+    return question, correct answer
     """
     number_one = randint(1, 100)
     number_two = randint(1, 100)

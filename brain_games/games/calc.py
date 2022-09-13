@@ -10,7 +10,7 @@ def generate_question_and_answer():
     """Generate question and unswer.
 
     Returns:
-    return question, true answer
+    return question, correct answer
     """
     number_one = randint(0, 100)
     number_two = randint(0, 100)

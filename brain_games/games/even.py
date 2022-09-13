@@ -10,7 +10,7 @@ def generate_question_and_answer():
     """Generate question and answer..
 
     Returns:
-    return question, true answer
+    return question, correct answer
     """
     number = randint(0, 100)
     return number, 'yes' if (number % 2 == 0) else 'no'
