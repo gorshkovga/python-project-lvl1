@@ -18,8 +18,8 @@ def is_prime(number):
     return True if number > 1 else False
 
 
-def make_question_and_answer():
-    """Make question and answer.
+def generate_question_and_answer():
+    """Generate question and answer.
 
     Returns:
     return question, true answer
